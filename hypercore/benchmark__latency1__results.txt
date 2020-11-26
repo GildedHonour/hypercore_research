@@ -1,0 +1,71 @@
+$ uname -a
+Linux localhost 5.6.8-arch1-1 #1 SMP PREEMPT Wed, 29 Apr 2020 16:22:56 +0000 x86_64 GNU/Linux
+
+//iteration#1
+
+NANOBENCH version 2
+> /usr/bin/node latency.js
+
+# first read, 50ms latency
+ok ~580 ms (0 s + 580144953 ns)
+
+# subsequent read, 50ms latency
+ok ~255 ms (0 s + 255128499 ns)
+
+# subsequent seek, 50ms latency
+ok ~261 ms (0 s + 260500376 ns)
+
+# reading the same file twice, 50ms latency
+ok ~154 ms (0 s + 153962014 ns)
+
+# listing a directory with 100 files, 50ms latency
+ok ~4.9 s (4 s + 902645666 ns)
+
+all benchmarks completed
+ok ~6.15 s (6 s + 152381508 ns)
+
+
+//iteration#2
+NANOBENCH version 2
+> /usr/bin/node latency.js
+
+# first read, 50ms latency
+ok ~586 ms (0 s + 585952949 ns)
+
+# subsequent read, 50ms latency
+ok ~258 ms (0 s + 257547909 ns)
+
+# subsequent seek, 50ms latency
+ok ~263 ms (0 s + 262868323 ns)
+
+# reading the same file twice, 50ms latency
+ok ~155 ms (0 s + 155348796 ns)
+
+# listing a directory with 100 files, 50ms latency
+ok ~4.9 s (4 s + 899466468 ns)
+
+all benchmarks completed
+ok ~6.16 s (6 s + 161184445 ns)
+
+
+//iteration#3
+NANOBENCH version 2
+> /usr/bin/node latency.js
+
+# first read, 50ms latency
+ok ~582 ms (0 s + 581811920 ns)
+
+# subsequent read, 50ms latency
+ok ~255 ms (0 s + 255390922 ns)
+
+# subsequent seek, 50ms latency
+ok ~262 ms (0 s + 261710835 ns)
+
+# reading the same file twice, 50ms latency
+ok ~154 ms (0 s + 153871699 ns)
+
+# listing a directory with 100 files, 50ms latency
+ok ~4.9 s (4 s + 898967392 ns)
+
+all benchmarks completed
+ok ~6.15 s (6 s + 151752768 ns)
