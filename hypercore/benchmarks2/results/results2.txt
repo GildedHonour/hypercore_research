@@ -1,0 +1,123 @@
+$ ./all.sh
+> git checkout f0b9943
+
+# clearing cache
+
+> rm -rf cores
+
+# running all benchmarks
+
+> node write-16kb-blocks.js
+152433535 bytes/s
+9287 blocks/s
+
+> node write-512b-blocks.js
+23863814 bytes/s
+46545 blocks/s
+
+> node write-64kb-blocks-static.js
+181222248 bytes/s
+2763 blocks/s
+
+> node write-64kb-blocks.js
+189172273 bytes/s
+2885 blocks/s
+
+> node copy-64kb-blocks.js
+48355857 bytes/s
+736 blocks/s
+
+> node read-16kb-blocks-proof.js
+24345678 bytes/s
+1485 blocks/s
+
+> node read-16kb-blocks.js
+94954176 bytes/s
+5789 blocks/s
+
+> node read-512b-blocks.js
+4777111 bytes/s
+9326 blocks/s
+
+> node read-64kb-blocks-linear.js
+160884300 bytes/s
+2453 blocks/s
+
+> node read-64kb-blocks-linear-batch.js
+181897649 bytes/s
+2773 blocks/s
+
+> node read-64kb-blocks-proof.js
+105165702 bytes/s
+1604 blocks/s
+
+> node read-64kb-blocks.js
+284284306 bytes/s
+4333 blocks/s
+
+> node replicate-16kb-blocks.js
+17740761 bytes/s
+1082 blocks/s
+
+> node replicate-64kb-blocks.js
+39386025 bytes/s
+600 blocks/s
+
+# re-running all benchmarks
+
+> node write-16kb-blocks.js
+140028928 bytes/s
+8537 blocks/s
+
+> node write-512b-blocks.js
+20064600 bytes/s
+39113 blocks/s
+
+> node write-64kb-blocks-static.js
+189707036 bytes/s
+2893 blocks/s
+
+> node write-64kb-blocks.js
+191023274 bytes/s
+2913 blocks/s
+
+> node copy-64kb-blocks.js
+46363911 bytes/s
+707 blocks/s
+
+> node read-16kb-blocks-proof.js
+25545818 bytes/s
+1558 blocks/s
+
+> node read-16kb-blocks.js
+89359339 bytes/s
+5444 blocks/s
+
+> node read-512b-blocks.js
+4515442 bytes/s
+8813 blocks/s
+
+> node read-64kb-blocks-linear.js
+168377265 bytes/s
+2564 blocks/s
+
+> node read-64kb-blocks-linear-batch.js
+182330077 bytes/s
+2779 blocks/s
+
+> node read-64kb-blocks-proof.js
+100518800 bytes/s
+1533 blocks/s
+
+> node read-64kb-blocks.js
+256691805 bytes/s
+3912 blocks/s
+
+> node replicate-16kb-blocks.js
+17539069 bytes/s
+1070 blocks/s
+
+> node replicate-64kb-blocks.js
+39123404 bytes/s
+596 blocks/s
+

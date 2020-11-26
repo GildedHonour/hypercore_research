@@ -1,0 +1,135 @@
+$ ./all.sh
+> git checkout f0b9943
+
+# clearing cache
+
+> rm -rf cores
+
+# running all benchmarks
+
+> node write-16kb-blocks.js
+226146129 bytes/s
+13779 blocks/s
+
+> node write-512b-blocks.js
+45041924 bytes/s
+87821 blocks/s
+
+> node write-64kb-blocks-static.js
+294984017 bytes/s
+4498 blocks/s
+
+> node write-64kb-blocks.js
+263753825 bytes/s
+4022 blocks/s
+
+> node copy-64kb-blocks.js
+75424404 bytes/s
+1148 blocks/s
+
+> node read-16kb-blocks-proof.js
+42792197 bytes/s
+2610 blocks/s
+
+> node read-16kb-blocks.js
+172184384 bytes/s
+10489 blocks/s
+
+> node read-512b-blocks.js
+7785684 bytes/s
+15199 blocks/s
+
+> node read-64kb-blocks-linear.js
+268435456 bytes/s
+4084 blocks/s
+
+> node read-64kb-blocks-linear-batch.js
+293131811 bytes/s
+4460 blocks/s
+
+> node read-64kb-blocks-proof.js
+157117621 bytes/s
+2396 blocks/s
+
+> node read-64kb-blocks.js
+419102975 bytes/s
+6385 blocks/s
+
+
+
+> node replicate-16kb-blocks.js
+31311729 bytes/s
+1910 blocks/s
+
+> node replicate-64kb-blocks.js
+68083306 bytes/s
+1038 blocks/s
+
+
+
+
+
+
+
+
+
+
+
+
+# re-running all benchmarks
+
+> node write-16kb-blocks.js
+204133426 bytes/s
+12430 blocks/s
+
+> node write-512b-blocks.js
+36947709 bytes/s
+72061 blocks/s
+
+> node write-64kb-blocks-static.js
+292095164 bytes/s
+4454 blocks/s
+
+> node write-64kb-blocks.js
+301105390 bytes/s
+4590 blocks/s
+
+> node copy-64kb-blocks.js
+76151902 bytes/s
+1161 blocks/s
+
+> node read-16kb-blocks-proof.js
+41470022 bytes/s
+2529 blocks/s
+
+> node read-16kb-blocks.js
+174082656 bytes/s
+10604 blocks/s
+
+> node read-512b-blocks.js
+7850973 bytes/s
+15329 blocks/s
+
+> node read-64kb-blocks-linear.js
+268502581 bytes/s
+4072 blocks/s
+
+> node read-64kb-blocks-linear-batch.js
+260364166 bytes/s
+3970 blocks/s
+
+> node read-64kb-blocks-proof.js
+150089715 bytes/s
+2289 blocks/s
+
+> node read-64kb-blocks.js
+380220192 bytes/s
+5793 blocks/s
+
+> node replicate-16kb-blocks.js
+29152417 bytes/s
+1778 blocks/s
+
+> node replicate-64kb-blocks.js
+65728564 bytes/s
+1002 blocks/s
