@@ -13,7 +13,7 @@ And a storage solution should:
 
   * be key-value storage
   * be decentralized
-  * have read-write operations should be performed within 1 second, at most under 3 seconds
+  * have read-write operations that are performed within 1 second, at most under 3 seconds
   * have support of replications
 
 
